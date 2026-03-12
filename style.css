@@ -210,10 +210,6 @@ body {
 body {
     overflow-x: hidden;
 }
-.nav-links {
-    white-space: nowrap;
-    display: flex;
-}
 
 /* Carte prestation */
 .prestation-card {
