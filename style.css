@@ -136,6 +136,7 @@ body {
     display: flex;
     gap: 25px;
     flex-shrink: 0;
+     white-space: nowrap;
 }
 
 .nav-links a {
