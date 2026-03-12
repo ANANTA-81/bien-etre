@@ -166,8 +166,9 @@ body {
 .mobile-menu {
     position: fixed;
     top: 0;
-    right: -250px; /* caché à droite */
-    width: 250px;
+    right: -300px; /* on recule plus loin */
+    width: 260px; /* un peu plus large */
+    max-width: 80vw; /* sécurité mobile */
     height: 100vh;
     background: #ffffff;
     box-shadow: -2px 0 10px rgba(0,0,0,0.1);
@@ -178,6 +179,7 @@ body {
     transition: right 0.3s ease;
     z-index: 999;
 }
+
 
 .mobile-menu a {
     text-decoration: none;
