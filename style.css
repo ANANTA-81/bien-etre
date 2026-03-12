@@ -1,1 +1,94 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: #ffffff;
+    color: #333;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+    background: linear-gradient(to bottom, #ffffff, #f7f7f7);
+}
+
+.hero h1 {
+    font-size: 60px;
+    letter-spacing: 4px;
+    margin: 0;
+    color: #c9a86a;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #555;
+}
+
+.cta {
+    margin-top: 30px;
+}
+
+.btn, .btn-secondary, .btn-small {
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.btn {
+    background: #c9a86a;
+    color: white;
+}
+
+.btn-secondary {
+    border: 2px solid #c9a86a;
+    color: #c9a86a;
+}
+
+.btn-small {
+    background: #c9a86a;
+    color: white;
+    padding: 8px 18px;
+    font-size: 14px;
+}
+
+/* SECTIONS */
+.section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.section.alt {
+    background: #faf7f2;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    width: 280px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+    color: #c9a86a;
+}
+
+/* FOOTER */
+.footer {
+    background: #333;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
 
