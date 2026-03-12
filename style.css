@@ -211,7 +211,7 @@ body {
 }
 .nav-links {
     white-space: nowrap;
-    display: inline-block;
+    display: flex;
 }
 
 /* Carte prestation */
