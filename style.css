@@ -151,7 +151,7 @@ body {
 .burger {
     display: none;
     flex-direction: column;
-    gap: 5px;
+    gap: 10px;
     cursor: pointer;
 }
 
@@ -190,14 +190,14 @@ body {
 
 /* MENU MOBILE OUVERT */
 .mobile-menu.open {
-    right: 0;
+    right: 10;
 }
 
 /* RESPONSIVE */
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
     .nav-links,
     .header-btn {
-        display: none;
+       gap: 15px; display: none;
     }
 
     .burger {
