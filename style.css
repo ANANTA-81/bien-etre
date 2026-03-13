@@ -132,18 +132,6 @@ body {
 }
 
 /* MENU DESKTOP */
-.nav-links {
-    display: flex;
-    gap: 25px;
-    flex-shrink: 0;
-     white-space: nowrap;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-}
 
 .header-btn {
     margin-left: 20px;
@@ -196,11 +184,6 @@ body {
 }
 
 /* RESPONSIVE */
-@media (max-width: 1300px) {
-    .nav-links,
-    .header-btn {
-        display: none;
-    }
 
     .burger {
         display: flex;
