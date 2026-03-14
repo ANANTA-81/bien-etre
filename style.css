@@ -267,16 +267,24 @@ body {
     .prestation-content h3 {
         font-size: 20px;
     }
+
+    /* 👉 1 colonne sur mobile */
+    .prestations-grid {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        justify-content: center;
+    }
 }
+
+/* Desktop */
 .prestations-grid {
     display: grid;
     gap: 40px;
     margin-top: 40px;
-    grid-template-columns: repeat(3, 1fr);/* 1 colonne */
-      justify-content: center;   /* centre la grille */
-    justify-items: center;     /* centre le contenu dans chaque colonne */
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    justify-items: center;
 }
-
 .prest-col h2 {
     font-size: 22px;
     color: #c9a86a;
