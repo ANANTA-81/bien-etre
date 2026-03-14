@@ -257,34 +257,25 @@ body {
 .prestation-cta:hover {
     background: #b08f58;
 }
+/* =========================
+   GRID DES PRESTATIONS
+   ========================= */
 
-/* Responsive */
-@media (max-width: 768px) {
-    .prestation-card {
-        margin-bottom: 30px;
-    }
-
-    .prestation-content h3 {
-        font-size: 20px;
-    }
-
-    /* 👉 1 colonne sur mobile */
-    .prestations-grid {
-        grid-template-columns: 1fr;
-        justify-items: center;
-        justify-content: center;
-    }
-}
-
-/* Desktop */
 .prestations-grid {
     display: grid;
     gap: 40px;
     margin-top: 40px;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
+
+    /* Responsive automatique */
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+
     justify-items: center;
 }
+
+/* =========================
+   COLONNES PRESTATIONS
+   ========================= */
+
 .prest-col h2 {
     font-size: 22px;
     color: #c9a86a;
@@ -305,11 +296,20 @@ body {
     margin-bottom: 10px;
     padding-left: 5px;
 }
+
+/* =========================
+   NAVIGATION
+   ========================= */
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
 .nav-links a {
     font-size: 18px;
     font-weight: 500;
     color: #444;
-    gap: 30px;
     text-decoration: none;
     padding: 10px 15px;
     transition: 0.3s ease;
@@ -321,3 +321,29 @@ body {
     transform: translateY(-2px);
 }
 
+/* =========================
+   RESPONSIVE MOBILE
+   ========================= */
+
+@media (max-width: 768px) {
+
+    .prestations-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .prestation-card {
+        margin-bottom: 30px;
+    }
+
+    .prestation-content h3 {
+        font-size: 20px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+}
