@@ -271,7 +271,7 @@ body {
     display: grid;
     gap: 40px;
     margin-top: 40px;
-    grid-template-columns: 1fr; /* 1 colonne */
+    grid-template-columns: repeat(3, 1fr);/* 1 colonne */
       justify-content: center;   /* centre la grille */
     justify-items: center;     /* centre le contenu dans chaque colonne */
 }
