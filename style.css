@@ -168,11 +168,11 @@ body {
 }
 
 .prestation-content {
-    padding: 25px;
+    padding: 32px;
 }
 
 .prestation-content h3 {
-    font-size: 22px;
+    font-size: 25px;
     color: #c9a86a;
     margin-bottom: 10px;
 }
@@ -245,7 +245,7 @@ body {
         grid-template-columns: 1fr;
     }
     .hero h1{
-        font-size: 36px;
+        font-size: 45px;
     }
     .hero p{
         font-size: 16px;
