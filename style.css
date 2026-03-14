@@ -208,6 +208,28 @@ body {
     text-align: center;
 }
 
+/* Liens dans le footer */
+.footer a {
+    color: #f0d9a0;          /* doré clair, moins agressif que #c9a86a */
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer a:hover {
+    color: #c9a86a;           /* doré plus vif au survol pour feedback */
+}
+
+/* Optionnel : liens tel/mail uniquement */
+.footer a[href^="tel"],
+.footer a[href^="mailto"] {
+    color: #f0d9a0;
+}
+
+.footer a[href^="tel"]:hover,
+.footer a[href^="mailto"]:hover {
+    color: #c9a86a;
+}
+
 /* =========================
    MEDIA QUERIES
    ========================= */
