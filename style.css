@@ -91,10 +91,6 @@ body {
     padding: 50px 20px;
     text-align: center;
 }
-@media (max-width: 600px) {
-    .hero {
-        padding: 80px 20px;
-    }
 
     .hero h1 {
         font-size: 50px;
@@ -168,14 +164,6 @@ body {
     gap: 20px;
     transition: right 0.3s ease;
     z-index: 999;
-}
-
-
-.mobile-menu a {
-    text-decoration: none;
-    color: #333;
-    font-size: 18px;
-    font-weight: 500;
 }
 
 /* MENU MOBILE OUVERT */
@@ -270,7 +258,7 @@ body {
 }
 
 /* Responsive */
-@media (max-width: 700px) {
+@media (max-width: 768px) {
     .prestation-card {
         margin-bottom: 30px;
     }
@@ -281,9 +269,9 @@ body {
 }
 .prestations-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     gap: 40px;
     margin-top: 40px;
+    grid-template-columns: 1fr; /* 1 colonne */
       justify-content: center;   /* centre la grille */
     justify-items: center;     /* centre le contenu dans chaque colonne */
 }
