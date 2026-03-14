@@ -104,6 +104,25 @@ body {
     transform: translateY(-2px);
 }
 
+/* ligne animée sous les liens */
+.nav-links a{
+position:relative;
+}
+
+.nav-links a::after{
+content:"";
+position:absolute;
+left:0;
+bottom:0;
+width:0;
+height:2px;
+background:#c9a86a;
+transition:0.3s;
+}
+
+.nav-links a:hover::after{
+width:100%;
+}
 /* BURGER MOBILE */
 .burger {
     display: none;
