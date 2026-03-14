@@ -234,3 +234,24 @@ body {
         display: flex;
     }
 }
+/* Centre le contenu texte dans toutes les sections */
+.section {
+    padding: 80px 20px;
+    text-align: center;  /* déjà présent, on renforce */
+}
+
+.section h2 {
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+.section p {
+    margin: 0 auto 20px auto;
+    max-width: 600px;      /* limite la largeur pour un meilleur centrage */
+    line-height: 1.6;
+}
+
+.section.alt .btn {
+    display: inline-block; /* s'assure que le bouton reste centré */
+    margin: 15px auto 0 auto; /* centrage horizontal */
+}
