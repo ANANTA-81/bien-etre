@@ -277,3 +277,15 @@ body {
     display: inline-block; /* s'assure que le bouton reste centré */
     margin: 15px auto 0 auto; /* centrage horizontal */
 }
+nav ul {
+  list-style: none; /* supprime les puces */
+  padding: 0;
+  margin: 0;
+  display: flex;           /* active flexbox */
+  justify-content: center; /* centre horizontalement */
+  gap: 40px;               /* espace entre les liens */
+}
+
+nav ul li {
+  display: inline; /* ou inline-block, selon ce que tu avais */
+}
