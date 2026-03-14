@@ -278,14 +278,21 @@ body {
     margin: 15px auto 0 auto; /* centrage horizontal */
 }
 nav ul {
-  list-style: none; /* supprime les puces */
+  list-style: none;
   padding: 0;
-  margin: 0;
-  display: flex;           /* active flexbox */
+  margin: 0 auto; /* centre le ul dans son conteneur */
+  display: flex;
   justify-content: center; /* centre horizontalement */
-  gap: 40px;               /* espace entre les liens */
+  gap: 50px; /* espace entre les liens */
 }
 
-nav ul li {
-  display: inline; /* ou inline-block, selon ce que tu avais */
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #9c27b0; /* ou la couleur de ton choix pour le hover */
 }
