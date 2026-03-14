@@ -296,3 +296,7 @@ nav ul li a {
 nav ul li a:hover {
   color: #9c27b0; /* ou la couleur de ton choix pour le hover */
 }
+.massage-titre{
+color:#c9a15b;
+font-weight:600;
+}
