@@ -18,6 +18,13 @@ body {
     background: linear-gradient(to bottom, #ffffff, #f7f7f7);
 }
 
+
+.hero-logo {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 12px;
+}
+
 .hero h1 {
     font-size: 60px;
     letter-spacing: 4px;
@@ -79,9 +86,14 @@ body {
 }
 
 .logo {
-    font-size: 24px;
-    font-weight: 600;
-    color: #c9a86a;
+    display: inline-flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 56px;
+    height: 56px;
+    display: block;
 }
 
 .nav-links {
@@ -129,6 +141,9 @@ width:100%;
     flex-direction: column;
     gap: 6px;
     cursor: pointer;
+    background: transparent;
+    border: 0;
+    padding: 0;
 }
 
 .burger span {
@@ -283,6 +298,11 @@ grid-template-columns: 1fr;
 
 .hero h1{
 font-size:40px;
+}
+
+.hero-logo{
+width:88px;
+height:88px;
 }
 
 .hero p{
