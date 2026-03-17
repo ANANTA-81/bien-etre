@@ -244,6 +244,52 @@ width:100%;
     background: #b08f58;
 }
 
+
+.prestation-cta-outline {
+    background: transparent;
+    border: 2px solid #c9a86a;
+    color: #c9a86a;
+}
+
+.prestation-cta-outline:hover {
+    background: #c9a86a;
+    color: #fff;
+}
+
+.pressotherapie-focus {
+    background: #fcfaf6;
+}
+
+.pressotherapie-layout {
+    max-width: 1100px;
+    margin: 30px auto 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+}
+
+.pressotherapie-image {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.pressotherapie-content {
+    text-align: left;
+}
+
+.pressotherapie-content h3 {
+    color: #c9a86a;
+    margin-top: 0;
+}
+
+.pressotherapie-content ul {
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
 /* =========================
    FOOTER
    ========================= */
@@ -316,6 +362,18 @@ display:none;
 
 .burger{
 display:flex;
+}
+
+.pressotherapie-layout{
+grid-template-columns:1fr;
+}
+
+.pressotherapie-content{
+text-align:center;
+}
+
+.pressotherapie-content ul{
+text-align:left;
 }
 
 }
