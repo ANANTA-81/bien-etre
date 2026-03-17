@@ -1,0 +1,8 @@
+<svg width="220" height="220" viewBox="0 0 220 220" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Logo ANANTA</title>
+  <desc id="desc">Symbole zen avec cercle, losange et courbe inférieure.</desc>
+  <circle cx="110" cy="28" r="12" stroke="#111111" stroke-width="6"/>
+  <path d="M110 58L78 90L110 122L142 90L110 58Z" stroke="#111111" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M58 148C74 130 96 136 110 148C124 160 146 166 162 148" stroke="#111111" stroke-width="6" stroke-linecap="round"/>
+  <path d="M58 148C74 166 96 160 110 148C124 136 146 130 162 148" stroke="#111111" stroke-width="6" stroke-linecap="round"/>
+</svg>
