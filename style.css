@@ -14,15 +14,15 @@ body {
    ========================= */
 .hero {
     text-align: center;
-    padding: 140px 20px 60px; /* marge pour header fixe */
+    padding: 140px 20px 70px; /* marge pour header fixe */
     background: linear-gradient(to bottom, #ffffff, #f7f7f7);
 }
 
 
 .hero-logo {
-    width: 120px;
-    height: 120px;
-    margin-bottom: 12px;
+    width: min(84px, 22vw);
+    height: auto;
+    margin-bottom: 10px;
 }
 
 .hero h1 {
@@ -34,8 +34,9 @@ body {
 
 .hero p {
     font-size: 18px;
-    margin-top: 10px;
+    margin: 10px auto 0;
     color: #555;
+    max-width: 780px;
 }
 
 .cta {
@@ -77,7 +78,7 @@ body {
     width: 100%;
     backdrop-filter: blur(8px);
     background: rgba(255, 255, 255, 0.7);
-    padding: 12px 15px;
+    padding: 10px clamp(12px, 2vw, 24px);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -91,8 +92,8 @@ body {
 }
 
 .logo img {
-    width: 56px;
-    height: 56px;
+    height: 44px;
+    width: auto;
     display: block;
 }
 
@@ -301,8 +302,8 @@ font-size:40px;
 }
 
 .hero-logo{
-width:88px;
-height:88px;
+width:min(72px, 26vw);
+height:auto;
 }
 
 .hero p{
