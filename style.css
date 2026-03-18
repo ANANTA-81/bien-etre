@@ -533,3 +533,177 @@ font-size:16px;
 letter-spacing:1px;
 color:#c9a15b;
 }
+
+.hero-landing h1 {
+    max-width: 980px;
+    margin: 0 auto;
+    letter-spacing: 0;
+    line-height: 1.15;
+    font-size: clamp(34px, 5vw, 56px);
+}
+
+.hero-subtitle {
+    max-width: 900px;
+    margin: 18px auto 0;
+}
+
+.hero-keywords {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.hero-keywords span {
+    padding: 10px 16px;
+    border-radius: 999px;
+    background: #f7f1e4;
+    color: #9f7b3f;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.section-alt {
+    background: #fcfaf6;
+}
+
+.section-split {
+    max-width: 1180px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(280px, 1fr) minmax(320px, 1fr);
+    gap: 36px;
+    align-items: center;
+}
+
+.media-card {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    padding: 18px;
+    box-shadow: 0 12px 36px rgba(0,0,0,0.06);
+}
+
+.featured-embed {
+    min-width: 0 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    border: 0 !important;
+    margin: 0 !important;
+}
+
+.split-content {
+    text-align: left;
+}
+
+.eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    color: #c9a86a;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.info-grid,
+.steps-grid,
+.tarifs-grid,
+.reviews-grid {
+    max-width: 1180px;
+    margin: 40px auto 0;
+    display: grid;
+    gap: 24px;
+}
+
+.five-grid {
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+}
+
+.three-grid,
+.steps-grid,
+.tarifs-grid,
+.reviews-grid {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.info-card,
+.step-card,
+.tarif-card,
+.review-card {
+    background: #fff;
+    border-radius: 18px;
+    padding: 24px;
+    box-shadow: 0 8px 28px rgba(0,0,0,0.06);
+    text-align: left;
+}
+
+.info-card h3,
+.step-card h3,
+.tarif-card h3,
+.review-card h3,
+.split-content h2 {
+    color: #c9a86a;
+}
+
+.step-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: #c9a86a;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+
+.tarif-card {
+    text-align: center;
+}
+
+.featured-tarif {
+    border: 2px solid #d7bb86;
+    transform: translateY(-4px);
+}
+
+.tarif-duration {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+}
+
+.tarif-note {
+    margin-top: 24px;
+}
+
+.review-empty {
+    border: 1px dashed #d7bb86;
+    background: #fffdf9;
+}
+
+.instagram-grid {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+@media (max-width: 900px) {
+    .section-split {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-landing h1 {
+        font-size: 34px;
+    }
+
+    .hero-keywords {
+        justify-content: center;
+    }
+
+    .split-content,
+    .info-card,
+    .step-card,
+    .review-card {
+        text-align: left;
+    }
+}
