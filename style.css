@@ -290,6 +290,51 @@ width:100%;
     margin-bottom: 20px;
 }
 
+
+.instagram-section {
+    background: #fff;
+}
+
+.instagram-grid {
+    max-width: 1100px;
+    margin: 30px auto 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.instagram-card {
+    text-decoration: none;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 16px rgba(0,0,0,0.08);
+    transition: transform 0.25s ease;
+    color: #333;
+}
+
+.instagram-card:hover {
+    transform: translateY(-4px);
+}
+
+.instagram-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.instagram-card span {
+    display: block;
+    padding: 12px;
+    font-weight: 600;
+    color: #c9a15b;
+}
+
+.instagram-help {
+    font-size: 14px;
+    color: #666;
+}
+
 /* =========================
    FOOTER
    ========================= */
@@ -365,6 +410,10 @@ display:flex;
 }
 
 .pressotherapie-layout{
+grid-template-columns:1fr;
+}
+
+.instagram-grid{
 grid-template-columns:1fr;
 }
 
