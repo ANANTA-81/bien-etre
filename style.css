@@ -14,8 +14,15 @@ body {
    ========================= */
 .hero {
     text-align: center;
-    padding: 140px 20px 60px; /* marge pour header fixe */
+    padding: 140px 20px 70px; /* marge pour header fixe */
     background: linear-gradient(to bottom, #ffffff, #f7f7f7);
+}
+
+
+.hero-logo {
+    width: min(84px, 22vw);
+    height: auto;
+    margin-bottom: 10px;
 }
 
 .hero h1 {
@@ -27,8 +34,9 @@ body {
 
 .hero p {
     font-size: 18px;
-    margin-top: 10px;
+    margin: 10px auto 0;
     color: #555;
+    max-width: 780px;
 }
 
 .cta {
@@ -70,7 +78,7 @@ body {
     width: 100%;
     backdrop-filter: blur(8px);
     background: rgba(255, 255, 255, 0.7);
-    padding: 12px 15px;
+    padding: 10px clamp(12px, 2vw, 24px);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -79,9 +87,14 @@ body {
 }
 
 .logo {
-    font-size: 24px;
-    font-weight: 600;
-    color: #c9a86a;
+    display: inline-flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 44px;
+    width: auto;
+    display: block;
 }
 
 .nav-links {
@@ -129,6 +142,9 @@ width:100%;
     flex-direction: column;
     gap: 6px;
     cursor: pointer;
+    background: transparent;
+    border: 0;
+    padding: 0;
 }
 
 .burger span {
@@ -157,6 +173,16 @@ width:100%;
 
 .mobile-menu.open {
     right: 0;
+}
+
+.mobile-menu a {
+    color: #c9a15b;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.mobile-menu a:hover {
+    color: #a8844a;
 }
 
 /* =========================
@@ -218,6 +244,140 @@ width:100%;
     background: #b08f58;
 }
 
+
+.prestation-cta-outline {
+    background: transparent;
+    border: 2px solid #c9a86a;
+    color: #c9a86a;
+}
+
+.prestation-cta-outline:hover {
+    background: #c9a86a;
+    color: #fff;
+}
+
+.pressotherapie-focus {
+    background: #fcfaf6;
+}
+
+.pressotherapie-layout {
+    max-width: 1100px;
+    margin: 30px auto 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+}
+
+.pressotherapie-media {
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 18px;
+    padding: 18px;
+    box-shadow: 0 12px 36px rgba(0,0,0,0.06);
+}
+
+.pressotherapie-image-card {
+    min-width: 0 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    border: 0 !important;
+    margin: 0 !important;
+}
+
+.pressotherapie-content {
+    text-align: left;
+}
+
+.pressotherapie-intro {
+    max-width: none;
+    margin-bottom: 22px;
+}
+
+.pressotherapie-points {
+    display: grid;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.pressotherapie-point {
+    padding: 18px 20px;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+}
+
+.pressotherapie-content h3,
+.pressotherapie-point h3 {
+    color: #c9a86a;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.pressotherapie-point p {
+    max-width: none;
+    margin: 0;
+}
+
+.pressotherapie-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+
+.instagram-section {
+    background: #fff;
+}
+
+.instagram-grid {
+    max-width: 1100px;
+    margin: 30px auto 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.instagram-card {
+    text-decoration: none;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 16px rgba(0,0,0,0.08);
+    transition: transform 0.25s ease;
+    color: #333;
+    margin: 0;
+}
+
+.instagram-card:hover {
+    transform: translateY(-4px);
+}
+
+.instagram-embeds .instagram-media {
+    min-width: 0 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    border: 0 !important;
+}
+
+.instagram-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.instagram-card span {
+    display: block;
+    padding: 12px;
+    font-weight: 600;
+    color: #c9a15b;
+}
+
+.instagram-help {
+    font-size: 14px;
+    color: #666;
+    max-width: 820px;
+}
+
 /* =========================
    FOOTER
    ========================= */
@@ -275,6 +435,11 @@ grid-template-columns: 1fr;
 font-size:40px;
 }
 
+.hero-logo{
+width:min(72px, 26vw);
+height:auto;
+}
+
 .hero p{
 font-size:16px;
 }
@@ -285,6 +450,22 @@ display:none;
 
 .burger{
 display:flex;
+}
+
+.pressotherapie-layout{
+grid-template-columns:1fr;
+}
+
+.instagram-grid{
+grid-template-columns:1fr;
+}
+
+.pressotherapie-content{
+text-align:center;
+}
+
+.pressotherapie-actions{
+justify-content:center;
 }
 
 }
@@ -337,4 +518,178 @@ font-weight:700;
 font-size:16px;
 letter-spacing:1px;
 color:#c9a15b;
+}
+
+.hero-landing h1 {
+    max-width: 980px;
+    margin: 0 auto;
+    letter-spacing: 0;
+    line-height: 1.15;
+    font-size: clamp(34px, 5vw, 56px);
+}
+
+.hero-subtitle {
+    max-width: 900px;
+    margin: 18px auto 0;
+}
+
+.hero-keywords {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.hero-keywords span {
+    padding: 10px 16px;
+    border-radius: 999px;
+    background: #f7f1e4;
+    color: #9f7b3f;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.section-alt {
+    background: #fcfaf6;
+}
+
+.section-split {
+    max-width: 1180px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(280px, 1fr) minmax(320px, 1fr);
+    gap: 36px;
+    align-items: center;
+}
+
+.media-card {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    padding: 18px;
+    box-shadow: 0 12px 36px rgba(0,0,0,0.06);
+}
+
+.featured-embed {
+    min-width: 0 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    border: 0 !important;
+    margin: 0 !important;
+}
+
+.split-content {
+    text-align: left;
+}
+
+.eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    color: #c9a86a;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.info-grid,
+.steps-grid,
+.tarifs-grid,
+.reviews-grid {
+    max-width: 1180px;
+    margin: 40px auto 0;
+    display: grid;
+    gap: 24px;
+}
+
+.five-grid {
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+}
+
+.three-grid,
+.steps-grid,
+.tarifs-grid,
+.reviews-grid {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.info-card,
+.step-card,
+.tarif-card,
+.review-card {
+    background: #fff;
+    border-radius: 18px;
+    padding: 24px;
+    box-shadow: 0 8px 28px rgba(0,0,0,0.06);
+    text-align: left;
+}
+
+.info-card h3,
+.step-card h3,
+.tarif-card h3,
+.review-card h3,
+.split-content h2 {
+    color: #c9a86a;
+}
+
+.step-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: #c9a86a;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+
+.tarif-card {
+    text-align: center;
+}
+
+.featured-tarif {
+    border: 2px solid #d7bb86;
+    transform: translateY(-4px);
+}
+
+.tarif-duration {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+}
+
+.tarif-note {
+    margin-top: 24px;
+}
+
+.review-empty {
+    border: 1px dashed #d7bb86;
+    background: #fffdf9;
+}
+
+.instagram-grid {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+@media (max-width: 900px) {
+    .section-split {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-landing h1 {
+        font-size: 34px;
+    }
+
+    .hero-keywords {
+        justify-content: center;
+    }
+
+    .split-content,
+    .info-card,
+    .step-card,
+    .review-card {
+        text-align: left;
+    }
 }

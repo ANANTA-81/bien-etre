@@ -7,6 +7,14 @@ const mobileMenu = document.querySelector('.mobile-menu');
 if (burger && mobileMenu) {
     burger.addEventListener('click', () => {
         mobileMenu.classList.toggle('open');
+        burger.setAttribute('aria-expanded', String(mobileMenu.classList.contains('open')));
+    });
+
+    mobileMenu.querySelectorAll('a').forEach((link) => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.remove('open');
+            burger.setAttribute('aria-expanded', 'false');
+        });
     });
 }
 
