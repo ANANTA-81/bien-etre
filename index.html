@@ -7,6 +7,24 @@
     <title>ANANTA – Massages, Pressothérapie, Reiki & Boutique bien-être à Saint-Juéry</title>
 
     <meta name="description" content="ANANTA Saint-Juéry : massages bien-être, soins énergétiques Reiki, pressothérapie, boutique de pierres naturelles, encens, lampes de sel et déco zen.">
+    <meta name="robots" content="index,follow">
+    <link rel="canonical" href="https://ananta-81.github.io/bien-etre/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="ANANTA">
+    <meta property="og:title" content="ANANTA – Massages, Pressothérapie, Reiki & Boutique bien-être à Saint-Juéry">
+    <meta property="og:description" content="Massages bien-être, pressothérapie, Reiki et boutique zen à Saint-Juéry.">
+    <meta property="og:url" content="https://ananta-81.github.io/bien-etre/">
+    <meta property="og:image" content="https://ananta-81.github.io/bien-etre/image/logo-ananta.svg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ANANTA – Bien-être à Saint-Juéry">
+    <meta name="twitter:description" content="Massages, pressothérapie, Reiki et boutique bien-être.">
+    <meta name="twitter:image" content="https://ananta-81.github.io/bien-etre/image/logo-ananta.svg">
+
+    <link rel="icon" type="image/svg+xml" href="image/logo-ananta.svg">
+    <link rel="apple-touch-icon" href="image/logo-ananta.svg">
 
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
@@ -16,20 +34,39 @@
 
 <!-- HEADER FIXE -->
 <header class="main-header">
-    <div class="logo">ANANTA</div>
+    <a class="logo" href="index.html" aria-label="Accueil ANANTA">
+        <img src="image/logo-ananta.svg" alt="Logo ANANTA">
+    </a>
 
-    <nav class="nav-links">
+    <nav class="nav-links" aria-label="Navigation principale">
         <a href="https://www.planity.com/ananta-81160-saint-juery" target="_blank" rel="noopener noreferrer">Prestations</a>
         <a href="https://www.bijouxpierresmineraux.fr/" target="_blank" rel="noopener noreferrer">Boutique</a>
         <a href="#apropos">À propos</a>
         <a href="#contact">Contact</a>
+        <a href="#instagram">Instagram</a>
+    </nav>
+
+    <button class="burger" type="button" aria-label="Ouvrir le menu mobile" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Navigation mobile">
+        <a href="https://www.planity.com/ananta-81160-saint-juery" target="_blank" rel="noopener noreferrer">Prestations</a>
+        <a href="https://www.bijouxpierresmineraux.fr/" target="_blank" rel="noopener noreferrer">Boutique</a>
+        <a href="#apropos">À propos</a>
+        <a href="#contact">Contact</a>
+        <a href="#instagram">Instagram</a>
     </nav>
 </header>
 
+<main id="contenu-principal">
 <!-- HERO -->
 <section class="hero">
+    <img class="hero-logo" src="image/logo-ananta.svg" alt="Logo ANANTA">
     <h1>ANANTA</h1>
-    <p>Massages bien-être • Pressothérapie • Soins Reiki • Boutique pierres naturelles • Encens & Déco zen</p>
+    <p>Massages bien-être • Pressothérapie • Soins Reiki • Boutique pierres naturelles • Encens & Déco zen à Saint-Juéry</p>
     <div class="cta">
         <a href="https://www.planity.com/ananta-81160-saint-juery" 
            class="btn" 
@@ -48,7 +85,7 @@
 </section>
 
 <!-- SECTION PRESTATIONS -->
-<section class="section prestations">
+<section class="section prestations" id="prestations">
    <h2>Prestations<br>Bien-être</h2>
     <div class="prestations-grid">
 
@@ -57,7 +94,7 @@
             <div class="prestation-card">
                 <div class="prestation-content">
                     <h3>Massages à l'huile</h3>
-                    <ul>
+                    <div class="details-list">
                         <h4 class="massage-titre">Massage Intuisens 60min</h4>
 
 <p class="description">
@@ -99,7 +136,7 @@ ce massage se concentre sur l'avant du corps pour un rééquilibrage total. le m
 
 ce massage complet du dos, des jambes et des pieds est idéal pour se revitaliser. mêlant puissance et douceur, les gestes sont appliqués très lentement pour favoriser une relaxation musculaire optimale.
 </p>
-                    </ul>
+                    </div>
                     <a href="https://www.planity.com/ananta-81160-saint-juery" 
                        class="prestation-cta" 
                        target="_blank" 
@@ -148,6 +185,7 @@ une séance complète de pressothérapie pour une détente maximale. la pression
                        class="prestation-cta" 
                        target="_blank" 
                        rel="noopener noreferrer">Réserver</a>
+                    <a href="plaquette-pressotherapie.html" class="prestation-cta prestation-cta-outline">Voir la plaquette</a>
                 </div>
             </div>
         </div>
@@ -178,6 +216,7 @@ le shiatsu est une technique japonaise basée sur des pressions exercées avec l
 <span class="zone">• bras</span><br><br>
 
 relâchement rapide des tensions en position assise. pressions, percussions et étirements sont appliqués sur le dos, les épaules et la nuque pour revitaliser le corps et soulager le stress en seulement quelques minutes. 
+</p>
 
 
 <h4 class="massage-titre">Soin énergétique Reiki 90min</h4>
@@ -200,21 +239,79 @@ le reiki est une méthode énergétique japonaise réalisée par apposition des 
     </div>
 </section>
     
+
+<!-- SECTION PRESSOTHÉRAPIE WELLBEINN -->
+<section class="section pressotherapie-focus" id="pressotherapie-focus">
+    <h2>Pressothérapie Wellbeinn</h2>
+    <p>Découvrez l’univers de votre appareil de pressothérapie avec une présentation simple et pédagogique : fonctionnement, bénéfices, et conseils de séance.</p>
+
+    <div class="pressotherapie-layout">
+        <img src="image/pressotherapie-device.svg" alt="Illustration de l’appareil de pressothérapie" class="pressotherapie-image">
+
+        <div class="pressotherapie-content">
+            <h3>Ce que vous pouvez ajouter sur votre site</h3>
+            <ul>
+                <li>Photo réelle de votre appareil en cabine (ambiance ANANTA).</li>
+                <li>Vidéo courte “avant séance / pendant séance / après séance”.</li>
+                <li>Présentation des 3 formats de séance : 25, 40 et 50 minutes.</li>
+                <li>Mini FAQ : est-ce douloureux ? à quelle fréquence ? pour qui ?</li>
+            </ul>
+
+            <a href="plaquette-pressotherapie.html" class="btn">Télécharger / consulter la plaquette</a>
+        </div>
+    </div>
+</section>
+
+
+<!-- SECTION INSTAGRAM PRESSOTHÉRAPIE -->
+<section class="section instagram-section" id="instagram">
+    <h2>Pressothérapie en images · Instagram</h2>
+    <p>Voici un espace dédié à vos photos réelles de séances et de matériel depuis <strong>@boutiqueananta</strong>.</p>
+
+    <div class="instagram-grid">
+        <a class="instagram-card" href="https://www.instagram.com/boutiqueananta/" target="_blank" rel="noopener noreferrer">
+            <img src="image/instagram-placeholder.svg" alt="Photo Instagram pressothérapie 1">
+            <span>Voir les photos sur Instagram</span>
+        </a>
+        <a class="instagram-card" href="https://www.instagram.com/boutiqueananta/" target="_blank" rel="noopener noreferrer">
+            <img src="image/instagram-placeholder.svg" alt="Photo Instagram pressothérapie 2">
+            <span>Voir les photos sur Instagram</span>
+        </a>
+        <a class="instagram-card" href="https://www.instagram.com/boutiqueananta/" target="_blank" rel="noopener noreferrer">
+            <img src="image/instagram-placeholder.svg" alt="Photo Instagram pressothérapie 3">
+            <span>Voir les photos sur Instagram</span>
+        </a>
+    </div>
+
+    <p class="instagram-help">Astuce : dès que vous me donnez 3 liens de posts Instagram (format <code>instagram.com/p/...</code>), je les intègre ici en embed direct.</p>
+</section>
+
 <!-- SECTION BOUTIQUE -->
 <section class="section alt">
     <h2>Boutique ANANTA</h2>
     <p>Créations artisanales, objets énergétiques, accessoires bien-être.</p>
-    <a href="#" class="btn">Accéder à la boutique</a>
+    <a href="https://www.bijouxpierresmineraux.fr/" class="btn" target="_blank" rel="noopener noreferrer">Accéder à la boutique</a>
 </section>
 
 <!-- SECTION À PROPOS -->
 <section class="section" id="apropos">
     <h2>À propos</h2>
     <p>
-        ANANTA est un espace dédié au bien-être, à l’énergie et à la création.  
-        Nous proposons des soins personnalisés, des massages, ainsi qu’une boutique artisanale unique.
+        ANANTA est un espace de bien-être situé à Saint-Juéry, pensé comme un véritable cocon de détente où le corps et l’esprit peuvent ralentir.
+        Chaque séance est accueillie avec écoute, douceur et présence, afin de proposer un accompagnement réellement adapté à vos besoins du moment.
+    </p>
+    <p>
+        Notre approche associe massages bien-être, pressothérapie et soins énergétiques Reiki pour vous aider à relâcher les tensions, retrouver de la légèreté,
+        améliorer la récupération et rééquilibrer votre énergie.
+        Que vous veniez pour un temps de pause, un besoin de récupération ou un mieux-être global, l’objectif reste le même : vous offrir un moment profondément ressourçant.
+    </p>
+    <p>
+        L’univers ANANTA se prolonge également à travers la boutique, avec une sélection d’articles autour du bien-être : pierres naturelles, encens,
+        décorations zen et créations artisanales.
+        Un lieu unique pour prendre soin de soi, durablement et en conscience.
     </p>
 </section>
+</main>
 
 <!-- CONTACT -->
 <footer class="footer" id="contact">
@@ -222,13 +319,50 @@ le reiki est une méthode énergétique japonaise réalisée par apposition des 
     <p>📍ANANTA – 9 Avenue Jean Jaurès, 81160 Saint-Juéry</p>
     <p>Tél : <a href="tel:0986199478">09 86 19 94 78</a></p>
     <p>📧 
-        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=positive.ananta@gmail.com" target="_blank">
+        <a href="mailto:positive.ananta@gmail.com">
             positive.ananta@gmail.com
         </a>
     </p>
     <p>Ouvert du mardi au samedi</p>
-    <p>10h-18h en continue</p>
+    <p>10h-18h en continu</p>
 </footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BeautySalon",
+  "name": "ANANTA",
+  "description": "Massages bien-être, pressothérapie, soins Reiki et boutique zen à Saint-Juéry.",
+  "url": "https://ananta-81.github.io/bien-etre/",
+  "telephone": "+33986199478",
+  "email": "positive.ananta@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "9 Avenue Jean Jaurès",
+    "postalCode": "81160",
+    "addressLocality": "Saint-Juéry",
+    "addressCountry": "FR"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "opens": "10:00",
+      "closes": "18:00"
+    }
+  ],
+  "sameAs": [
+    "https://www.planity.com/ananta-81160-saint-juery",
+    "https://www.bijouxpierresmineraux.fr/"
+  ]
+}
+</script>
 
 <script src="script.js"></script>
 </body>
