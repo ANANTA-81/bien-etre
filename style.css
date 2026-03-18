@@ -282,6 +282,11 @@ width:100%;
     width: 100% !important;
     border: 0 !important;
     margin: 0 !important;
+.pressotherapie-image {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
 }
 
 .pressotherapie-content {
@@ -322,6 +327,14 @@ width:100%;
     display: flex;
     flex-wrap: wrap;
     gap: 14px;
+.pressotherapie-content h3 {
+    color: #c9a86a;
+    margin-top: 0;
+}
+
+.pressotherapie-content ul {
+    line-height: 1.8;
+    margin-bottom: 20px;
 }
 
 
@@ -345,7 +358,6 @@ width:100%;
     box-shadow: 0 5px 16px rgba(0,0,0,0.08);
     transition: transform 0.25s ease;
     color: #333;
-    margin: 0;
 }
 
 .instagram-card:hover {
@@ -466,6 +478,8 @@ text-align:center;
 
 .pressotherapie-actions{
 justify-content:center;
+.pressotherapie-content ul{
+text-align:left;
 }
 
 }
