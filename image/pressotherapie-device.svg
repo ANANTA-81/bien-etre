@@ -1,0 +1,16 @@
+<svg width="640" height="420" viewBox="0 0 640 420" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Illustration pressothérapie</title>
+  <desc id="desc">Illustration d'un appareil de pressothérapie avec bottes et boîtier de commande.</desc>
+  <rect x="0" y="0" width="640" height="420" rx="20" fill="#F8F5EF"/>
+  <rect x="420" y="85" width="140" height="180" rx="14" fill="#FFFFFF" stroke="#C9A86A" stroke-width="4"/>
+  <rect x="450" y="115" width="80" height="40" rx="8" fill="#EFE7D8"/>
+  <circle cx="470" cy="190" r="8" fill="#C9A86A"/>
+  <circle cx="505" cy="190" r="8" fill="#C9A86A"/>
+  <circle cx="540" cy="190" r="8" fill="#C9A86A"/>
+  <path d="M180 78C140 85 120 118 124 170L132 320C134 343 154 360 177 360H230C255 360 274 340 274 316L268 165C266 118 235 84 193 78H180Z" fill="#FFFFFF" stroke="#C9A86A" stroke-width="4"/>
+  <path d="M304 78C264 85 244 118 248 170L256 320C258 343 278 360 301 360H354C379 360 398 340 398 316L392 165C390 118 359 84 317 78H304Z" fill="#FFFFFF" stroke="#C9A86A" stroke-width="4"/>
+  <path d="M160 150H238M166 210H244M170 270H248" stroke="#E7D9BE" stroke-width="6" stroke-linecap="round"/>
+  <path d="M284 150H362M290 210H368M294 270H372" stroke="#E7D9BE" stroke-width="6" stroke-linecap="round"/>
+  <path d="M391 132C424 126 436 118 450 106" stroke="#C9A86A" stroke-width="4" stroke-linecap="round"/>
+  <path d="M267 132C300 126 312 118 326 106" stroke="#C9A86A" stroke-width="4" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,10 @@
+<svg width="640" height="640" viewBox="0 0 640 640" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Placeholder photo Instagram</title>
+  <desc id="desc">Cadre neutre pour intégrer des photos Instagram de pressothérapie.</desc>
+  <rect width="640" height="640" rx="32" fill="#F7F2E8"/>
+  <rect x="180" y="180" width="280" height="280" rx="24" fill="#FFFFFF" stroke="#C9A86A" stroke-width="8"/>
+  <circle cx="320" cy="320" r="72" stroke="#C9A86A" stroke-width="8"/>
+  <circle cx="395" cy="245" r="16" fill="#C9A86A"/>
+  <path d="M70 560H570" stroke="#E1D2B4" stroke-width="10" stroke-linecap="round"/>
+  <text x="320" y="525" text-anchor="middle" fill="#B7924C" font-size="28" font-family="Arial, sans-serif">@boutiqueananta</text>
+</svg>
